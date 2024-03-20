@@ -18,8 +18,21 @@ const displayDate = () => {
 
 
 
+const numToString = (num) => {
+  num = parseInt(num)
+  console.log("start: " ,typeof num)
+  num += ""
+  console.log("end: " ,typeof num)
+}
+
 // Write a JavaScript program to convert a string to the number.
 
+
+const stringToNum = (string) => {
+  console.log("start: " ,typeof string)
+  string = parseInt(string)
+  console.log("end: " ,typeof string)
+}
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -30,21 +43,93 @@ const displayDate = () => {
   // * NaN
   // * String
   
+let thing 
+const typePrint = (type) => {
+  console.log(typeof thing)
 
+  // console.log(type)
+  // if (type == "boolean") {
+  //   console.log("boolean")
+  //   return
+  // }
+  // if (type == "null") {
+  //   console.log("null")
+  //   return
+  // }
+  // if (type == "boolean") {
+  //   console.log("boolean")
+  //   return
+  // }
+  // if (type == "undefined") {
+  //   console.log("undefined")
+  //   return
+  // }
+  // if (type == "NaN") {
+  //   console.log("NaN")
+  //   return
+  // }
+  // if (type == "number") {
+  //   console.log("number")
+  //   return
+  // }
+}
   
 // Write a JavaScript program that adds 2 numbers together.
 
-
+const addition = (numOne, numTwo) => {
+  console.log(numOne+numTwo)
+}
 
 // Write a JavaScript program that runs only when 2 things are true.
+let A = false
+let B = false
+const flipValue = (name) => {
+  if (name == "A") {
+    if (A == true){
+      A = false
+    } else {
+      A = true
+    }
+    // console.log("button selected: ", name, "value: ", A)
 
+  }
+  if (name == "B") {
+    if (B == true){
+      B = false
+    } else {
+      B = true
+    }
+    // console.log("button selected: ", name, "value: ", B)
 
+  }
+}
+const bothTrue = () => {
+  if (A == true && B == true) {
+    console.log("Program has been run!")
+  } else {
+    console.log("Program cannot be run!")
+  }
+}
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
-
+const eitherTrue = () => {
+  if (A == true || B == true) {
+    console.log("Program has been run!")
+  } else {
+    console.log("Program cannot be run!")
+  }
+}
 
 // Write a JavaScript program that runs when both things are not true.  
+
+const neitherTrue = () => {
+  if (A == false && B == false) {
+    console.log("Program has been run!")
+  } else {
+    console.log("Program cannot be run!")
+  }
+}
 
 // ***************************
 //         PART TWO

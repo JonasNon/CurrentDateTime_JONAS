@@ -3,13 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <h1>Hello World!</h1>
     <hr/>
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
+    <input type="number" onchange="numToString(this.value)">Number to String</input>
+    <br></br>
+    <input type="number" onchange="stringToNum(this.value)">String to Number</input>
+    <br></br>
+    <button onclick="typePrint()">Type Identity(input type in console please!)</button>
+    <!-- <input type="radio" class="boolean" onchange="typePrint(this.class)"></input>
+    <label for="boolean">True</label>
+    <input type="radio" class="null" onchange="typePrint(this.class)"></input>
+    <label for="null">Null</label>
+    <input type="radio" class="undefined" onchange="typePrint(this.class)"></input>
+    <label for="undefined">Undefined</label>
+    <input type="radio" class="number" onchange="typePrint(this.class)"></input>
+    <label for="number">Number</label>
+    <input type="radio" class="NaN" onchange="typePrint(this.class)"></input>
+    <label for="NaN">NaN</label> -->
+    <br></br>
+
+    <p>Check the boxes to switch value to true. Select a button to determine if program should run.</p>
+    <input type="checkbox" name="A" onclick="flipValue(this.name)">A</input>
+    <input type="checkbox" name="B" onclick="flipValue(this.name)">B</input>
+    <button onclick="bothTrue()">Run if both are true.</button>
+    <button onclick="eitherTrue()">Run if one is true.</button>
+    <button onclick="neitherTrue()">Run if neither are true.</button>
+
+
+    
+    <!-- <button onclick="bothTrue(this.name)">Both true</button> -->
+
+
     <hr/>
   </body>
 </html>
