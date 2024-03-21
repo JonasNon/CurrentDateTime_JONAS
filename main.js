@@ -103,10 +103,15 @@ const flipValue = (name) => {
 
   }
 }
+const resultText = document.getElementById("result")
+let run = "Program has been run!"
+let noRun = "Program cannot be run!"
 const bothTrue = () => {
   if (A == true && B == true) {
+    resultText.innerHTML = run
     console.log("Program has been run!")
   } else {
+    resultText.innerHTML = noRun
     console.log("Program cannot be run!")
   }
 }
@@ -115,8 +120,10 @@ const bothTrue = () => {
 
 const eitherTrue = () => {
   if (A == true || B == true) {
+    resultText.innerHTML = run
     console.log("Program has been run!")
   } else {
+    resultText.innerHTML = noRun
     console.log("Program cannot be run!")
   }
 }
@@ -125,8 +132,10 @@ const eitherTrue = () => {
 
 const neitherTrue = () => {
   if (A == false && B == false) {
+    resultText.innerHTML = run
     console.log("Program has been run!")
   } else {
+    resultText.innerHTML = noRun
     console.log("Program cannot be run!")
   }
 }
