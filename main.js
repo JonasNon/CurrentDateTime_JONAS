@@ -75,9 +75,18 @@ const typePrint = (type) => {
 }
   
 // Write a JavaScript program that adds 2 numbers together.
+let numOne
+let numTwo
+const setNumOne = (one) => {
+  numOne = parseInt(one)
+}
+const setNumTwo = (two) => {
+  numTwo = parseInt(two)
+}
 
-const addition = (numOne, numTwo) => {
+const addition = () => {
   console.log(numOne+numTwo)
+  document.getElementById("additionAnswer").innerHTML = numOne + numTwo
 }
 
 // Write a JavaScript program that runs only when 2 things are true.

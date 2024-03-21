@@ -10,6 +10,7 @@
     <hr/>
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
+    <br>
     <input type="number" onchange="numToString(this.value)">Number to String</input>
     <br></br>
     <input type="number" onchange="stringToNum(this.value)">String to Number</input>
@@ -35,7 +36,16 @@
     <button onclick="neitherTrue()">Run if neither are true.</button>
     <br>
     <p id="result"></p>
-
+    <br>
+    <!-- <p>Do addition here!</p>
+    <br> -->
+    <label for="numone">Addition:</label>
+    <label for="numone">Num 1:</label>
+    <input type="number" name="numone" onchange="setNumOne(this.value)"></input>
+    <label for="numone">Num 2:</label>
+    <input type="number" name="numtwo" onchange="setNumTwo(this.value)"></input>
+    <button for="numtwo" id="addButton" onclick="addition()">=</button>
+    <label for="numtwo" id="additionAnswer"></label>
 
     
     <!-- <button onclick="bothTrue(this.name)">Both true</button> -->
